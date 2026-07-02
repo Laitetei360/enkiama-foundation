@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Volunteer, apply, partner or donate to support Enkiama Foundation's Maasai youth empowerment programs.">
+  <title>Get Involved | Enkiama Foundation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-cms-page="get_involved">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="navbar" id="navbar" aria-label="Primary navigation">
+    <div class="nav-container">
+      <a href="/index.html" class="nav-logo" aria-label="Enkiama Foundation home"><img src="/images/enkiama-logo.png" alt="Enkiama Foundation logo" class="brand-logo-image"></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="programs.html" class="nav-link">Programs</a></li>
+        <li><a href="impact.html" class="nav-link">Impact</a></li>
+        <li><a href="heritage.html" class="nav-link">Heritage</a></li>
+        <li><a href="get-involved.html" class="nav-link active" aria-current="page">Get Involved</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="#donate" class="btn-nav">Donate Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open navigation menu" aria-controls="navMenu" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="hero page-hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-bg-image" data-cms-bg-key="get_involved.hero.image_url" style="background-image: url('https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1920'); background-position: center 38%;"></div>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <div class="container hero-copy reveal">
+          <span class="eyebrow">Get involved</span>
+          <h1 class="hero-title" data-cms-key="get_involved.hero.title">Choose your role in <span class="highlight">building futures.</span></h1>
+          <p class="hero-subtitle" data-cms-key="get_involved.hero.subtitle">Volunteer, apply, partner or donate. Every action helps youth access technology, mentorship and cultural confidence.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="eyebrow">Choose your path</span>
+          <h2 class="section-title">Start with the way you want to support Enkiama.</h2>
+          <p class="section-subtitle">Select one option and the matching form will open below. The forms are focused so you only see what you need.</p>
+        </div>
+        <div class="intent-grid reveal" data-involvement-chooser aria-label="Ways to get involved">
+          <button type="button" class="intent-card" data-involvement-target="volunteer" aria-controls="volunteer" aria-pressed="false"><i class="fas fa-hand-holding-heart" aria-hidden="true"></i><strong>Volunteer</strong><span>Share time, skills and community support.</span></button>
+          <button type="button" class="intent-card" data-involvement-target="partner" aria-controls="partner" aria-pressed="false"><i class="fas fa-handshake" aria-hidden="true"></i><strong>Partner</strong><span>Fund, train, equip or open doors.</span></button>
+          <button type="button" class="intent-card" data-involvement-target="donate" aria-controls="donate" aria-pressed="false"><i class="fas fa-circle-dollar-to-slot" aria-hidden="true"></i><strong>Donate</strong><span>Support programs and learning resources.</span></button>
+          <button type="button" class="intent-card" data-involvement-target="mentor" aria-controls="volunteer" aria-pressed="false"><i class="fas fa-user-graduate" aria-hidden="true"></i><strong>Become a Mentor</strong><span>Guide learners through skills and careers.</span></button>
+          <button type="button" class="intent-card" data-involvement-target="sponsor" aria-controls="donate" aria-pressed="false"><i class="fas fa-seedling" aria-hidden="true"></i><strong>Sponsor a Student</strong><span>Help a learner access training and tools.</span></button>
+        </div>
+        <p id="involvementIntro" class="involvement-intro reveal">Choose an option above to open the relevant form.</p>
+      </div>
+    </section>
+
+    <section id="volunteer" class="section involvement-panel" data-involvement-panel="volunteer">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <span class="eyebrow">Volunteer</span>
+          <h2 class="section-title">Bring your expertise closer to young talent.</h2>
+          <p class="mission-text">Mentors, trainers, designers, engineers, writers and community builders can help youth see what is possible and practice the skills that make it real.</p>
+          <ul class="meta-list">
+            <li><i class="fas fa-check" aria-hidden="true"></i><span>Mentor learners and early-career youth.</span></li>
+            <li><i class="fas fa-check" aria-hidden="true"></i><span>Support workshops, reviews and career preparation.</span></li>
+            <li><i class="fas fa-check" aria-hidden="true"></i><span>Contribute remotely or through community sessions.</span></li>
+          </ul>
+        </div>
+        <form id="volunteerForm" class="form-card reveal">
+          <div class="form-grid">
+            <div class="form-field"><label for="volFirstName">First name</label><input id="volFirstName" name="firstName" type="text" autocomplete="given-name" required></div>
+            <div class="form-field"><label for="volLastName">Last name</label><input id="volLastName" name="lastName" type="text" autocomplete="family-name" required></div>
+            <div class="form-field"><label for="volEmail">Email</label><input id="volEmail" name="email" type="email" autocomplete="email" required></div>
+            <div class="form-field"><label for="volPhone">Phone</label><input id="volPhone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div class="form-field full"><label for="volAvailability">Availability</label><input id="volAvailability" name="availability" type="text" placeholder="Example: weekends, evenings, remote" required></div>
+            <div class="form-field full"><label for="volMotivation">Why do you want to volunteer?</label><textarea id="volMotivation" name="motivation" minlength="50" placeholder="Tell us about your skills, interests and why Enkiama matters to you." required></textarea><small>Minimum 50 characters.</small></div>
+          </div>
+          <div class="form-actions"><button class="btn btn-primary" type="submit">Submit Volunteer Form</button><p class="form-note">We will review your interest and follow up.</p></div>
+        </form>
+      </div>
+    </section>
+
+    <section id="apply" class="section mission-section involvement-panel" data-involvement-panel="apply">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <span class="eyebrow">Apply</span>
+          <h2 class="section-title">Start your learning journey with Enkiama.</h2>
+          <p class="mission-text">Tell us which program fits your goals. We welcome youth who are curious, committed and ready to learn with community.</p>
+        </div>
+        <form id="programForm" class="form-card reveal">
+          <div class="form-grid">
+            <div class="form-field"><label for="appFirstName">First name</label><input id="appFirstName" name="firstName" type="text" autocomplete="given-name" required></div>
+            <div class="form-field"><label for="appLastName">Last name</label><input id="appLastName" name="lastName" type="text" autocomplete="family-name" required></div>
+            <div class="form-field"><label for="appEmail">Email</label><input id="appEmail" name="email" type="email" autocomplete="email" required></div>
+            <div class="form-field"><label for="appPhone">Phone</label><input id="appPhone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div class="form-field"><label for="appAge">Age</label><input id="appAge" name="age" type="number" min="16" max="35" required></div>
+            <div class="form-field"><label for="appProgram">Program</label><select id="appProgram" name="programName" required><option value="">Select program</option><option>Digital Academy</option><option>Career & Mentorship Hub</option><option>Women & Girls in Technology</option></select></div>
+            <div class="form-field full"><label for="appGoals">Your goals</label><textarea id="appGoals" name="goals" placeholder="What do you want to learn or achieve through this program?"></textarea></div>
+          </div>
+          <div class="form-actions"><button class="btn btn-primary" type="submit">Apply for Program</button><p class="form-note">Your application goes directly to the Enkiama team.</p></div>
+        </form>
+      </div>
+    </section>
+
+    <section id="partner" class="section involvement-panel" data-involvement-panel="partner">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <span class="eyebrow">Partner</span>
+          <h2 class="section-title">Fund, train, equip or open doors.</h2>
+          <p class="mission-text">We welcome schools, companies, donors, foundations, community leaders and technical experts who want to expand digital opportunity with dignity.</p>
+          <div class="feature-strip">
+            <article class="feature-item"><h3>Funding</h3><p>Support training, devices and community programs.</p></article>
+            <article class="feature-item"><h3>Training</h3><p>Run workshops or contribute curriculum.</p></article>
+            <article class="feature-item"><h3>Technology</h3><p>Help build infrastructure and tools.</p></article>
+          </div>
+        </div>
+        <form id="partnershipForm" class="form-card reveal">
+          <div class="form-grid">
+            <div class="form-field"><label for="partnerFirstName">First name</label><input id="partnerFirstName" name="firstName" type="text" autocomplete="given-name" required></div>
+            <div class="form-field"><label for="partnerLastName">Last name</label><input id="partnerLastName" name="lastName" type="text" autocomplete="family-name" required></div>
+            <div class="form-field"><label for="partnerEmail">Email</label><input id="partnerEmail" name="email" type="email" autocomplete="email" required></div>
+            <div class="form-field"><label for="partnerOrg">Organization</label><input id="partnerOrg" name="organization" type="text" autocomplete="organization" required></div>
+            <div class="form-field full"><label for="partnerType">Partnership type</label><select id="partnerType" name="partnershipType" required><option value="">Partnership type</option><option>Funding</option><option>Training</option><option>Mentorship</option><option>Technology Support</option></select></div>
+            <div class="form-field full"><label for="partnerIdea">Partnership idea</label><textarea id="partnerIdea" name="partnershipIdea" minlength="50" placeholder="Describe your partnership idea, resources or collaboration goals." required></textarea><small>Minimum 50 characters.</small></div>
+          </div>
+          <div class="form-actions"><button class="btn btn-primary" type="submit">Submit Partnership</button><p class="form-note">We will respond with next steps.</p></div>
+        </form>
+      </div>
+    </section>
+
+    <section id="donate" class="section mission-section involvement-panel" data-involvement-panel="donate">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <span class="eyebrow">Donate</span>
+          <h2 class="section-title">Invest in skills, mentorship and cultural preservation.</h2>
+          <p class="mission-text">Donations support digital learning materials, mentorship coordination, community workshops, heritage documentation and the future Innovation & Technology Centre.</p>
+          <ul class="meta-list">
+            <li><i class="fas fa-check" aria-hidden="true"></i><span>KES 1,000 can support learner resources.</span></li>
+            <li><i class="fas fa-check" aria-hidden="true"></i><span>KES 5,000 can help run a training session.</span></li>
+            <li><i class="fas fa-check" aria-hidden="true"></i><span>Institutional gifts can sponsor cohorts or equipment.</span></li>
+          </ul>
+        </div>
+        <form id="donationForm" class="form-card reveal">
+          <div class="amount-grid" aria-label="Suggested donation amounts">
+            <button class="amount-chip" type="button" data-amount="1000">KES 1,000</button>
+            <button class="amount-chip" type="button" data-amount="2500">KES 2,500</button>
+            <button class="amount-chip" type="button" data-amount="5000">KES 5,000</button>
+            <button class="amount-chip" type="button" data-amount="10000">KES 10,000</button>
+          </div>
+          <div class="form-grid">
+            <div class="form-field full"><label for="donorName">Full name</label><input id="donorName" name="name" type="text" autocomplete="name" required></div>
+            <div class="form-field full"><label for="donorEmail">Email</label><input id="donorEmail" name="email" type="email" autocomplete="email" required></div>
+            <div class="form-field"><label for="donationAmount">Amount</label><input id="donationAmount" name="amount" type="number" min="1" placeholder="Enter amount" required></div>
+            <div class="form-field"><label for="donationCurrency">Currency</label><select id="donationCurrency" name="currency" required><option value="KES">KES</option><option value="USD">USD</option><option value="EUR">EUR</option><option value="GBP">GBP</option></select></div>
+            <div class="form-field full"><label for="paymentMethod">Payment method</label><select id="paymentMethod" name="paymentMethod" required><option value="mpesa">M-Pesa</option><option value="paypal">PayPal</option><option value="wise">Wise</option><option value="bank">Bank</option><option value="card">Card</option></select></div>
+          </div>
+          <div class="form-actions"><button class="btn btn-primary" type="submit">Donate Now</button><p class="form-note">Donation details are submitted securely for follow-up.</p></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="maasai-band" aria-hidden="true"></div>
+    <div class="container footer-main">
+      <div class="footer-brand"><a href="/index.html" class="footer-logo" aria-label="Enkiama Foundation home"><img src="/images/enkiama-logo.png" alt="Enkiama Foundation logo" class="brand-logo-image"></a><p>Preserving Maasai heritage while building digital futures for youth in Kajiado County and beyond.</p><div class="social-links" aria-label="Social links"><a href="contact.html" aria-label="Email Enkiama Foundation"><i class="fas fa-envelope" aria-hidden="true"></i></a><a href="contact.html" aria-label="Call Enkiama Foundation"><i class="fas fa-phone" aria-hidden="true"></i></a><a href="get-involved.html" aria-label="Get involved"><i class="fas fa-hand-holding-heart" aria-hidden="true"></i></a></div></div>
+      <div><h3>Explore</h3><ul><li><a href="about.html">About</a></li><li><a href="programs.html">Programs</a></li><li><a href="impact.html">Impact</a></li><li><a href="heritage.html">Heritage</a></li></ul></div>
+      <div><h3>Take Action</h3><ul><li><a href="get-involved.html#apply">Apply</a></li><li><a href="get-involved.html#volunteer">Volunteer</a></li><li><a href="get-involved.html#partner">Partner</a></li><li><a href="get-involved.html#donate">Donate</a></li></ul></div>
+      <div><h3>Contact</h3><ul><li>Loitoktok, Kajiado County</li><li><a href="mailto:info@enkiama.org">info@enkiama.org</a></li><li><a href="contact.html">Send a message</a></li></ul></div>
+    </div>
+    <div class="container footer-bottom"><p>&copy; 2026 Enkiama Foundation. All rights reserved.</p><p>"Enkiama" means Hope in Maa.</p></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

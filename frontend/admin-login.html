@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin Login | Enkiama Foundation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-login-page">
+  <main class="admin-login-shell">
+    <section class="admin-login-card" aria-labelledby="adminLoginTitle">
+      <a href="/index.html" class="admin-login-logo" aria-label="Enkiama Foundation home"><img src="/images/enkiama-logo.png" alt="Enkiama Foundation logo" class="admin-login-logo__image"></a>
+      <p class="admin-kicker">Secure admin area</p>
+      <h1 id="adminLoginTitle">Admin Dashboard</h1>
+      <p class="admin-login-copy">Sign in with an admin account to manage submissions, website activity and CMS content.</p>
+
+      <form id="adminLoginForm" class="admin-form">
+        <label>
+          <span>Email address</span>
+          <input name="email" type="email" autocomplete="email" required>
+        </label>
+        <label>
+          <span>Password</span>
+          <input name="password" type="password" autocomplete="current-password" required>
+        </label>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+        <p id="adminLoginMessage" class="admin-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <script src="js/admin.js"></script>
+</body>
+</html>

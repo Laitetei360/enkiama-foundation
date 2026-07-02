@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Enkiama Foundation for programs, partnerships, volunteering, donations, media and general inquiries.">
+  <title>Contact | Enkiama Foundation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-cms-page="contact">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="navbar" id="navbar" aria-label="Primary navigation">
+    <div class="nav-container">
+      <a href="/index.html" class="nav-logo" aria-label="Enkiama Foundation home"><img src="/images/enkiama-logo.png" alt="Enkiama Foundation logo" class="brand-logo-image"></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="programs.html" class="nav-link">Programs</a></li>
+        <li><a href="impact.html" class="nav-link">Impact</a></li>
+        <li><a href="heritage.html" class="nav-link">Heritage</a></li>
+        <li><a href="get-involved.html" class="nav-link">Get Involved</a></li>
+        <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+        <li><a href="get-involved.html#donate" class="btn-nav">Donate Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open navigation menu" aria-controls="navMenu" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="hero page-hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-bg-image" data-cms-bg-key="contact.hero.image_url" style="background-image: url('https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=1920'); background-position: center 42%;"></div>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <div class="container hero-copy reveal">
+          <span class="eyebrow">Contact</span>
+          <h1 class="hero-title" data-cms-key="contact.hero.title">Let us build the next step <span class="highlight">together.</span></h1>
+          <p class="hero-subtitle" data-cms-key="contact.hero.subtitle">Reach Enkiama Foundation for programs, partnerships, volunteering, donations, media and general inquiries.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <span class="eyebrow">Send a message</span>
+          <h2 class="section-title">Tell us how we can help.</h2>
+          <p class="mission-text">Use the form for program questions, partnership ideas, volunteer interest, donation coordination or media requests.</p>
+          <form id="contactForm" class="form-card">
+            <div class="form-grid">
+              <div class="form-field"><label for="contactFirstName">First name</label><input id="contactFirstName" name="firstName" type="text" autocomplete="given-name" required></div>
+              <div class="form-field"><label for="contactLastName">Last name</label><input id="contactLastName" name="lastName" type="text" autocomplete="family-name" required></div>
+              <div class="form-field"><label for="contactEmail">Email</label><input id="contactEmail" name="email" type="email" autocomplete="email" required></div>
+              <div class="form-field"><label for="contactPhone">Phone</label><input id="contactPhone" name="phone" type="tel" autocomplete="tel"></div>
+              <div class="form-field full"><label for="contactSubject">Subject</label><select id="contactSubject" name="subject" required><option value="">Select subject</option><option value="general">General</option><option value="programs">Programs</option><option value="partnership">Partnership</option><option value="volunteer">Volunteer</option><option value="donate">Donate</option><option value="media">Media</option><option value="other">Other</option></select></div>
+              <div class="form-field full"><label for="contactMessage">Message</label><textarea id="contactMessage" name="message" placeholder="Share a few details so we can route your message well." required></textarea></div>
+            </div>
+            <div class="form-actions"><button class="btn btn-primary" type="submit">Send Message</button><p class="form-note">We will respond as soon as possible.</p></div>
+          </form>
+        </div>
+
+        <aside class="contact-list reveal" aria-label="Contact information">
+          <article class="contact-card"><div class="contact-icon"><i class="fas fa-location-dot" aria-hidden="true"></i></div><div><h3>Location</h3><p>Loitoktok, Kajiado County, Kenya</p></div></article>
+          <article class="contact-card"><div class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div><div><h3>Email</h3><p><a href="mailto:info@enkiama.org">info@enkiama.org</a></p></div></article>
+          <article class="contact-card"><div class="contact-icon"><i class="fas fa-phone" aria-hidden="true"></i></div><div><h3>Phone</h3><p>+254 XXX XXX XXX</p></div></article>
+          <article class="contact-card"><div class="contact-icon"><i class="fas fa-bullseye" aria-hidden="true"></i></div><div><h3>Focus</h3><p>Technology, mentorship, youth empowerment and Maasai heritage preservation.</p></div></article>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section mission-section">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <span class="eyebrow">Newsletter</span>
+          <h2 class="section-title">Follow the journey.</h2>
+          <p class="mission-text">Get updates on programs, stories, partnerships and ways to support Maasai youth empowerment.</p>
+        </div>
+        <form id="newsletterForm" class="form-card reveal">
+          <div class="form-grid">
+            <div class="form-field full"><label for="newsletterName">Your name</label><input id="newsletterName" name="name" type="text" autocomplete="name"></div>
+            <div class="form-field full"><label for="newsletterEmail">Email address</label><input id="newsletterEmail" name="email" type="email" autocomplete="email" required></div>
+          </div>
+          <div class="form-actions"><button class="btn btn-primary" type="submit">Subscribe</button><p class="form-note">No spam, just meaningful updates.</p></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container cta-content">
+        <div class="reveal"><span class="eyebrow">Ready to act?</span><h2 class="section-title">There is more than one way to support hope.</h2><p class="section-subtitle">Apply, volunteer, donate or partner with Enkiama Foundation.</p></div>
+        <div class="cta-actions reveal"><a href="get-involved.html" class="btn btn-primary btn-large">Get Involved</a><a href="programs.html" class="btn btn-outline btn-large">View Programs</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="maasai-band" aria-hidden="true"></div>
+    <div class="container footer-main">
+      <div class="footer-brand"><a href="/index.html" class="footer-logo" aria-label="Enkiama Foundation home"><img src="/images/enkiama-logo.png" alt="Enkiama Foundation logo" class="brand-logo-image"></a><p>Preserving Maasai heritage while building digital futures for youth in Kajiado County and beyond.</p><div class="social-links" aria-label="Social links"><a href="contact.html" aria-label="Email Enkiama Foundation"><i class="fas fa-envelope" aria-hidden="true"></i></a><a href="contact.html" aria-label="Call Enkiama Foundation"><i class="fas fa-phone" aria-hidden="true"></i></a><a href="get-involved.html" aria-label="Get involved"><i class="fas fa-hand-holding-heart" aria-hidden="true"></i></a></div></div>
+      <div><h3>Explore</h3><ul><li><a href="about.html">About</a></li><li><a href="programs.html">Programs</a></li><li><a href="impact.html">Impact</a></li><li><a href="heritage.html">Heritage</a></li></ul></div>
+      <div><h3>Take Action</h3><ul><li><a href="get-involved.html#apply">Apply</a></li><li><a href="get-involved.html#volunteer">Volunteer</a></li><li><a href="get-involved.html#partner">Partner</a></li><li><a href="get-involved.html#donate">Donate</a></li></ul></div>
+      <div><h3>Contact</h3><ul><li>Loitoktok, Kajiado County</li><li><a href="mailto:info@enkiama.org">info@enkiama.org</a></li><li><a href="contact.html">Send a message</a></li></ul></div>
+    </div>
+    <div class="container footer-bottom"><p>&copy; 2026 Enkiama Foundation. All rights reserved.</p><p>"Enkiama" means Hope in Maa.</p></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

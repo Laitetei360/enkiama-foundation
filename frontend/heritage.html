@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Enkiama Foundation heritage preservation work for Maa language, oral stories, traditional arts and digital cultural archives.">
+  <title>Heritage | Enkiama Foundation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-cms-page="heritage">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="navbar" id="navbar" aria-label="Primary navigation">
+    <div class="nav-container">
+      <a href="/index.html" class="nav-logo" aria-label="Enkiama Foundation home"><img src="/images/enkiama-logo.png" alt="Enkiama Foundation logo" class="brand-logo-image"></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="programs.html" class="nav-link">Programs</a></li>
+        <li><a href="impact.html" class="nav-link">Impact</a></li>
+        <li><a href="heritage.html" class="nav-link active" aria-current="page">Heritage</a></li>
+        <li><a href="get-involved.html" class="nav-link">Get Involved</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="get-involved.html#donate" class="btn-nav">Donate Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open navigation menu" aria-controls="navMenu" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="hero page-hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-bg-image" data-cms-bg-key="heritage.hero.image_url" style="background-image: url('https://images.pexels.com/photos/8347850/pexels-photo-8347850.jpeg?auto=compress&cs=tinysrgb&w=1920'); background-position: center 42%;"></div>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <div class="container hero-copy reveal">
+          <span class="eyebrow">Heritage</span>
+          <h1 class="hero-title" data-cms-key="heritage.hero.title">Preserving Maasai memory with <span class="highlight">digital care.</span></h1>
+          <p class="hero-subtitle" data-cms-key="heritage.hero.subtitle">We protect Maa language, oral stories, traditional arts and community wisdom using respectful digital tools.</p>
+          <div class="hero-buttons"><a href="#stories" class="btn btn-primary btn-large">Submit a Story</a><a href="programs.html" class="btn btn-secondary btn-large">Explore Programs</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="eyebrow">Digital archive</span>
+          <h2 class="section-title">Culture carried forward by community voices.</h2>
+          <p class="section-subtitle">Heritage preservation is not nostalgia. It is a way to keep language, wisdom and identity alive for young people building modern futures.</p>
+        </div>
+        <div class="programs-grid">
+          <article class="program-card reveal"><div class="program-icon"><i class="fas fa-language" aria-hidden="true"></i></div><h3>Maa Language</h3><p>Building digital resources for Maa words, meanings, pronunciation and learning materials.</p></article>
+          <article class="program-card reveal"><div class="program-icon"><i class="fas fa-microphone" aria-hidden="true"></i></div><h3>Oral Stories</h3><p>Recording elders' wisdom, community stories, songs, proverbs and historical memories.</p></article>
+          <article class="program-card reveal"><div class="program-icon"><i class="fas fa-palette" aria-hidden="true"></i></div><h3>Traditional Arts</h3><p>Showcasing beadwork, attire, symbols, dances, music and Maasai creative heritage.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-brown">
+      <div class="container split-grid">
+        <div class="reveal">
+          <span class="eyebrow">Respect first</span>
+          <h2 class="section-title">Preservation must honor the people who carry the knowledge.</h2>
+          <p class="section-subtitle">Stories submitted to Enkiama should be shared with permission, context and respect for family, elders and community ownership.</p>
+        </div>
+        <div class="quote-panel reveal"><p>Technology becomes meaningful when it helps a community remember, teach and imagine together.</p></div>
+      </div>
+    </section>
+
+    <section class="section mission-section" id="stories">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <span class="eyebrow">Community archive</span>
+          <h2 class="section-title">Submit a story, word, memory or lesson.</h2>
+          <p class="mission-text">Share a heritage story, community reflection, learning experience or technology journey. Your submission helps grow a respectful archive of knowledge and hope.</p>
+          <ul class="meta-list">
+            <li><i class="fas fa-check" aria-hidden="true"></i><span>Use your own words or submit with permission.</span></li>
+            <li><i class="fas fa-check" aria-hidden="true"></i><span>Include enough detail for future learners to understand the context.</span></li>
+            <li><i class="fas fa-check" aria-hidden="true"></i><span>We may review submissions before publishing or archiving.</span></li>
+          </ul>
+        </div>
+
+        <form id="storyForm" class="form-card reveal">
+          <div class="form-grid">
+            <div class="form-field full">
+              <label for="storyTitle">Story title</label>
+              <input id="storyTitle" name="title" type="text" placeholder="Example: A lesson from my grandmother" required>
+            </div>
+            <div class="form-field full">
+              <label for="storyContent">Story content</label>
+              <textarea id="storyContent" name="content" placeholder="Write your story here..." required></textarea>
+              <small>Share the context, people, place and lesson behind the story.</small>
+            </div>
+            <div class="form-field">
+              <label for="storyAuthorName">Your name</label>
+              <input id="storyAuthorName" name="author.name" type="text" autocomplete="name" required>
+            </div>
+            <div class="form-field">
+              <label for="storyAuthorEmail">Your email</label>
+              <input id="storyAuthorEmail" name="author.email" type="email" autocomplete="email" required>
+            </div>
+            <div class="form-field full">
+              <label for="storyCategory">Category</label>
+              <select id="storyCategory" name="category" required>
+                <option value="">Select category</option>
+                <option value="heritage">Heritage</option>
+                <option value="community">Community</option>
+                <option value="education">Education</option>
+                <option value="technology">Technology</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Submit Story</button>
+            <p class="form-note">Your form is securely submitted to Enkiama Foundation.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container cta-content">
+        <div class="reveal"><span class="eyebrow">Support heritage work</span><h2 class="section-title">Help us document language, stories and cultural knowledge.</h2><p class="section-subtitle">Partners, mentors and donors can help turn community memory into learning resources for the next generation.</p></div>
+        <div class="cta-actions reveal"><a href="get-involved.html#donate" class="btn btn-primary btn-large">Donate</a><a href="get-involved.html#partner" class="btn btn-outline btn-large">Partner</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="maasai-band" aria-hidden="true"></div>
+    <div class="container footer-main">
+      <div class="footer-brand"><a href="/index.html" class="footer-logo" aria-label="Enkiama Foundation home"><img src="/images/enkiama-logo.png" alt="Enkiama Foundation logo" class="brand-logo-image"></a><p>Preserving Maasai heritage while building digital futures for youth in Kajiado County and beyond.</p><div class="social-links" aria-label="Social links"><a href="contact.html" aria-label="Email Enkiama Foundation"><i class="fas fa-envelope" aria-hidden="true"></i></a><a href="contact.html" aria-label="Call Enkiama Foundation"><i class="fas fa-phone" aria-hidden="true"></i></a><a href="get-involved.html" aria-label="Get involved"><i class="fas fa-hand-holding-heart" aria-hidden="true"></i></a></div></div>
+      <div><h3>Explore</h3><ul><li><a href="about.html">About</a></li><li><a href="programs.html">Programs</a></li><li><a href="impact.html">Impact</a></li><li><a href="heritage.html">Heritage</a></li></ul></div>
+      <div><h3>Take Action</h3><ul><li><a href="get-involved.html#apply">Apply</a></li><li><a href="get-involved.html#volunteer">Volunteer</a></li><li><a href="get-involved.html#partner">Partner</a></li><li><a href="get-involved.html#donate">Donate</a></li></ul></div>
+      <div><h3>Contact</h3><ul><li>Loitoktok, Kajiado County</li><li><a href="mailto:info@enkiama.org">info@enkiama.org</a></li><li><a href="contact.html">Send a message</a></li></ul></div>
+    </div>
+    <div class="container footer-bottom"><p>&copy; 2026 Enkiama Foundation. All rights reserved.</p><p>"Enkiama" means Hope in Maa.</p></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

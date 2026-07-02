@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Enkiama Foundation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body class="admin-page">
+  <aside class="admin-sidebar">
+
+    <a class="admin-brand" href="/index.html" aria-label="Enkiama Foundation home">
+      <img src="/images/enkiama-logo.png" alt="Enkiama Foundation logo" class="admin-brand-logo">
+      <span class="admin-brand-text">
+        <strong>Admin</strong>
+        <small>Dashboard</small>
+      </span>
+    </a>
+    <nav class="admin-nav" aria-label="Admin navigation">
+      <button class="admin-nav__item is-active" type="button" data-view="overview">Overview</button>
+      <button class="admin-nav__item" type="button" data-view="submissions">Submissions</button>
+      <button class="admin-nav__item" type="button" data-view="content">Website Content</button>
+      <button class="admin-nav__item" type="button" data-view="analytics">Analytics</button>
+      <button class="admin-nav__item" type="button" data-view="profile">Admin Profile</button>
+    </nav>
+    <button class="admin-logout" type="button" id="logoutBtn">Sign out</button>
+  </aside>
+
+  <main class="admin-main">
+    <header class="admin-topbar">
+      <div>
+        <p class="eyebrow">Enkiama Foundation</p>
+        <h1>Admin Dashboard</h1>
+      </div>
+      <div class="admin-user" id="adminUser">Admin</div>
+    </header>
+
+    <section class="admin-view is-active" id="view-overview">
+      <div class="admin-section-heading">
+        <div>
+          <p class="eyebrow">Overview</p>
+          <h2>Submission Summary</h2>
+        </div>
+        <button class="btn btn-secondary" type="button" id="refreshStatsBtn">Refresh</button>
+      </div>
+      <div class="admin-stat-grid" id="statsGrid"></div>
+    </section>
+
+    <section class="admin-view" id="view-submissions">
+      <div class="admin-section-heading">
+        <div>
+          <p class="eyebrow">Submissions</p>
+          <h2>Manage Form Records</h2>
+        </div>
+      </div>
+      <div class="admin-controls">
+        <label>
+          Table
+          <select id="tableSelect"></select>
+        </label>
+        <label>
+          Search
+          <input id="recordSearch" type="search" placeholder="Search records">
+        </label>
+        <button class="btn btn-secondary" type="button" id="refreshRecordsBtn">Refresh</button>
+      </div>
+      <div class="admin-table-wrap">
+        <table class="admin-table" id="recordsTable"></table>
+      </div>
+    </section>
+
+    <section class="admin-view" id="view-content">
+      <div class="admin-section-heading">
+        <div>
+          <p class="eyebrow">CMS</p>
+          <h2>Website Content</h2>
+          <p class="admin-muted">Choose a page, update a section, then refresh the public page to see the change.</p>
+        </div>
+        <a class="btn btn-secondary" href="index.html" target="_blank" rel="noopener" id="viewCmsPageBtn">View Page</a>
+      </div>
+
+      <div class="cms-toolbar">
+        <div class="cms-tabs" id="cmsPageTabs" role="tablist" aria-label="CMS pages"></div>
+        <label class="cms-page-select">
+          Page
+          <select id="cmsPageSelect"></select>
+        </label>
+      </div>
+
+      <div class="cms-status" id="cmsStatus" aria-live="polite"></div>
+      <div class="cms-section-grid" id="cmsSections"></div>
+
+      <details class="cms-entries">
+        <summary>Saved content entries</summary>
+        <div class="admin-table-wrap">
+          <table class="admin-table" id="contentTable"></table>
+        </div>
+      </details>
+    </section>
+
+    <section class="admin-view" id="view-analytics">
+      <div class="admin-section-heading">
+        <div>
+          <p class="eyebrow">Analytics</p>
+          <h2>Visitor Tracking</h2>
+          <p class="admin-muted">Page views are recorded without storing raw IP addresses.</p>
+        </div>
+        <button class="btn btn-secondary" type="button" id="refreshAnalyticsBtn">Refresh</button>
+      </div>
+      <div class="admin-stat-grid" id="analyticsStats"></div>
+      <div class="analytics-layout">
+        <article class="admin-panel">
+          <h3>Most Visited Pages</h3>
+          <div id="pageViewsList" class="page-view-list"></div>
+        </article>
+        <article class="admin-panel">
+          <h3>Recent Visits</h3>
+          <div class="admin-table-wrap">
+            <table class="admin-table" id="visitsTable"></table>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="admin-view" id="view-profile">
+      <div class="admin-section-heading">
+        <div>
+          <p class="eyebrow">Account</p>
+          <h2>Admin Profile</h2>
+          <p class="admin-muted">Update your contact details, avatar, and password.</p>
+        </div>
+      </div>
+      <div class="profile-layout">
+        <form class="admin-panel admin-form" id="profileForm">
+          <h3>Profile Details</h3>
+          <div class="profile-avatar">
+            <img id="profileAvatarPreview" alt="Admin avatar preview">
+            <div>
+              <label>
+                Profile image URL
+                <input type="url" name="avatar" id="profileAvatar" placeholder="https://...">
+              </label>
+              <label class="upload-inline">
+                Upload avatar
+                <input type="file" id="profileAvatarUpload" accept="image/*">
+              </label>
+            </div>
+          </div>
+          <div class="form-grid-two">
+            <label>
+              First name
+              <input type="text" name="firstName" id="profileFirstName" autocomplete="given-name">
+            </label>
+            <label>
+              Last name
+              <input type="text" name="lastName" id="profileLastName" autocomplete="family-name">
+            </label>
+          </div>
+          <div class="form-grid-two">
+            <label>
+              Email
+              <input type="email" name="email" id="profileEmail" autocomplete="email" required>
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="phone" id="profilePhone" autocomplete="tel">
+            </label>
+          </div>
+          <div class="form-message" id="profileMessage" aria-live="polite"></div>
+          <button class="btn btn-primary" type="submit">Save Profile</button>
+        </form>
+
+        <form class="admin-panel admin-form" id="passwordForm">
+          <h3>Change Password</h3>
+          <label>
+            Current password
+            <input type="password" name="currentPassword" id="currentPassword" autocomplete="current-password" required>
+          </label>
+          <label>
+            New password
+            <input type="password" name="newPassword" id="newPassword" autocomplete="new-password" minlength="8" required>
+          </label>
+          <div class="form-message" id="passwordMessage" aria-live="polite"></div>
+          <button class="btn btn-primary" type="submit">Update Password</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>
