@@ -1,0 +1,113 @@
+{
+  "version": 2,
+  "functions": {
+    "api/index.js": {
+      "maxDuration": 10
+    },
+    "api/[...path].js": {
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/",
+      "destination": "/frontend/index.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/frontend/about.html"
+    },
+    {
+      "source": "/about.html",
+      "destination": "/frontend/about.html"
+    },
+    {
+      "source": "/programs",
+      "destination": "/frontend/programs.html"
+    },
+    {
+      "source": "/programs.html",
+      "destination": "/frontend/programs.html"
+    },
+    {
+      "source": "/impact",
+      "destination": "/frontend/impact.html"
+    },
+    {
+      "source": "/impact.html",
+      "destination": "/frontend/impact.html"
+    },
+    {
+      "source": "/heritage",
+      "destination": "/frontend/heritage.html"
+    },
+    {
+      "source": "/heritage.html",
+      "destination": "/frontend/heritage.html"
+    },
+    {
+      "source": "/get-involved",
+      "destination": "/frontend/get-involved.html"
+    },
+    {
+      "source": "/get-involved.html",
+      "destination": "/frontend/get-involved.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/frontend/contact.html"
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/frontend/contact.html"
+    },
+    {
+      "source": "/admin",
+      "destination": "/frontend/admin.html"
+    },
+    {
+      "source": "/admin.html",
+      "destination": "/frontend/admin.html"
+    },
+    {
+      "source": "/admin-login",
+      "destination": "/frontend/admin-login.html"
+    },
+    {
+      "source": "/admin-login.html",
+      "destination": "/frontend/admin-login.html"
+    },
+    {
+      "source": "/css/:path*",
+      "destination": "/frontend/css/:path*"
+    },
+    {
+      "source": "/js/:path*",
+      "destination": "/frontend/js/:path*"
+    },
+    {
+      "source": "/images/:path*",
+      "destination": "/frontend/images/:path*"
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "/frontend/assets/:path*"
+    },
+    {
+      "source": "/uploads/:path*",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/frontend/index.html"
+    }
+  ]
+}
