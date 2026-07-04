@@ -284,3 +284,13 @@ button { border: 0; }
   }
 }
 
+/* Homepage hero image */
+.hero-home {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),
+    url("../assets/images/pexels-kureng-workx-2546437-13033138.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 550px;
+}
