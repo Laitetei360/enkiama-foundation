@@ -319,3 +319,35 @@ button { border: 0; }
     height: 320px;
   }
 }
+
+/* Transparent blue gradient for homepage hero */
+.hero-home .hero-overlay {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(8, 47, 73, 0.78) 0%,
+      rgba(14, 116, 144, 0.48) 50%,
+      rgba(30, 64, 175, 0.35) 100%
+    );
+}
+
+/* Lighter transparent blue gradient */
+.hero-home .hero-overlay {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(8, 47, 73, 0.48) 0%,
+      rgba(14, 116, 144, 0.28) 50%,
+      rgba(30, 64, 175, 0.18) 100%
+    ) !important;
+}
+
+.hero-home .hero-overlay {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(8, 47, 73, 0.48) 0%,
+      rgba(14, 116, 144, 0.28) 50%,
+      rgba(30, 64, 175, 0.18) 100%
+    ) !important;
+}
