@@ -294,3 +294,28 @@ button { border: 0; }
   background-repeat: no-repeat;
   min-height: 550px;
 }
+
+/* Fix homepage content-image aspect ratios */
+.mission-image,
+.image-panel {
+  width: 100%;
+  height: 460px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.mission-image img,
+.image-panel img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 768px) {
+  .mission-image,
+  .image-panel {
+    height: 320px;
+  }
+}
